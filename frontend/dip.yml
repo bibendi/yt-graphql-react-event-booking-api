@@ -1,0 +1,21 @@
+version: '2'
+
+compose:
+  files:
+    - ../docker-compose.yml
+
+interaction:
+  bash: &bash
+    service: frontend
+    command: bash
+
+  yarn:
+    <<: *bash
+    service: frontend
+    command: yarn
+    subcommands:
+      start:
+        compose_method: up
+
+provision:
+  - dip yarn install
