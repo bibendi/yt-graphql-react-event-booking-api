@@ -21,6 +21,7 @@ services:
       MONGODB_URL: mongodb://mongodb
     ports:
       - '8000:8000'
+      - '9229:9229'
     depends_on:
       - mongodb
 
