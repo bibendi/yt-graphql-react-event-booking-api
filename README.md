@@ -13,7 +13,7 @@ You can run this example application inside Docker contaniers. To do that you ne
 * Install [dip](https://github.com/bibendi/dip).
 * [Integrate](https://github.com/bibendi/dip#integration-with-shell) dip into you ZSH console.
 * Provision backend application: `provision`.
-* Start Node server: `yarn start`.
+* Start Node server: `yarn start`, or `yarn start:dev`, or `yarn start:debug`.
 * Open another terminal and change current directory to `frontend`.
 * Provision frontend application: `provision`.
 * Start React server: `yarn start`.

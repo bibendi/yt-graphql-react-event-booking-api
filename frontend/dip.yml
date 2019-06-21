@@ -15,7 +15,8 @@ interaction:
     command: yarn
     subcommands:
       start:
-        compose_method: up
+        command: yarn start
+        compose_run_options: [service-ports]
 
 provision:
   - dip yarn install
