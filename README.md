@@ -46,5 +46,5 @@ You can debug this code through VS Code. To do that you need^
   }
   ```
 
-* Run backend application: `yarn start`.
+* Run backend application: `yarn start:debug`.
 * F5 -> Start debugging in VS Code.
