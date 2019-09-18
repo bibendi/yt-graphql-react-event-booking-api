@@ -11,9 +11,9 @@ You can run this example application inside Docker contaniers. To do that you ne
 * Install Docker.
 * Install Docker-Compose.
 * Install [dip](https://github.com/bibendi/dip).
-* [Integrate](https://github.com/bibendi/dip#integration-with-shell) dip into you ZSH console.
+* [Integrate](https://github.com/bibendi/dip#integration-with-shell) dip into you shell.
 * Provision backend application: `provision`.
-* Start Node server: `yarn start`, or `yarn start:dev`, or `yarn start:debug`.
+* Start Node server: `yarn start:dev`.
 * Open another terminal and change current directory to `frontend`.
 * Provision frontend application: `provision`.
 * Start React server: `yarn start`.
@@ -21,7 +21,7 @@ You can run this example application inside Docker contaniers. To do that you ne
 
 ## Debug
 
-You can debug this code through VS Code. To do that you need^
+### VSCode
 
 * Create file `.vscode/launch.json` with below contents:
 
@@ -47,4 +47,10 @@ You can debug this code through VS Code. To do that you need^
   ```
 
 * Run backend application: `yarn start:debug`.
-* F5 -> Start debugging in VS Code.
+* Start debugging.
+
+### WebStorm
+
+* Pick at the menu: Run > Debug... > Add a configuration from the "Attach to Node..js" template.
+* Run backend application: `yarn start:debug`.
+* Start debugging.

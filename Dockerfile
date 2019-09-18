@@ -1,0 +1,6 @@
+ARG NODE_VERSION_MAJOR
+FROM node:${NODE_VERSION_MAJOR}
+
+RUN mkdir -p /app
+
+WORKDIR /app
